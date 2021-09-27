@@ -1,0 +1,122 @@
+{"type":[
+
+
+   {
+        "products":[
+            {
+                "name":"80s",
+                "desc": "80s type pants witch colorfull vibes",
+                "src": "/byxor/80s.jpg",
+                "price": 450
+            },
+            {
+                "name":"class",
+                "desc":"nice pants",
+                "src":"/byxor/class.jpg",
+                "price": 700
+
+            },
+            {
+                "name":"fashion",
+                "desc":"strong pants for the party",
+                "src":"/byxor/fashion.jpg",
+                "price":900
+
+            },
+            {
+                "name":"military",
+                "desc":"super strong pants for the woods",
+                "src":"/byxor/military.jpg",
+                "price": 3000
+
+            },
+            {
+                "name":"skogen",
+                "desc":"high class pants for fishing and bear hunting",
+                "src":"/byxor/skogen.jpg",
+                "price":333
+ 
+            }
+        ]
+    },
+    {
+        "products":[
+            {
+                "name":"buffalo",
+                "desc": "lighting up your kids walk",
+                "src": "/skor/buffalo.jpeg",
+                "price":450
+            },
+            {
+                "name":"shiny",
+                "desc":"shoes to light up the party, your moonwalking will be splender",
+                "src":"/skor/shiny.png",
+                "price":1000
+
+            },
+            {
+                "name":"stylie",
+                "desc":"your girlfriend would love this gift",
+                "src":"/skor/stylie.jpg",
+                "price":1200
+
+            },
+            {
+                "name":"vanie",
+                "desc":"skate your way thru the hills in this fashion",
+                "src":"/skor/vanie.jpeg",
+                "price":200
+
+            },
+            {
+                "name":"water trainers",
+                "desc":"this shoe will lift your walk to another level, we hope",
+                "src":"/skor/water trainers.jpg",
+                "price":350
+                
+
+            }
+        ]
+
+    },
+    {
+        "products":[
+            {
+                "name":"hoodie",
+                "desc": "this shirt will warm your neck 100%",
+                "src": "/tröjor/hoodie.jpg",
+                "price":890
+            },
+            {
+                "name":"mysig",
+                "desc":"you will have cosy winter nights in this",
+                "src":"/tröjor/mysig.jpg",
+                "price":350
+
+            },
+            {
+                "name":"run",
+                "desc":"perfect for running and swet in the sun",
+                "src":"/tröjor/run.jpg",
+                "price":100
+
+            },
+            {
+                "name":"sport",
+                "desc":"this is your nr1 shirt for sport events and home workout",
+                "src":"/tröjor/sport.jpg",
+                "price":700
+
+            },
+            {
+                "name":"stickad",
+                "desc":"cosy shirt to warm up most humans with finess",
+                "src":"/tröjor/stickad.jpg",
+                "price":1400
+
+            }
+        ]
+
+    }
+]
+}

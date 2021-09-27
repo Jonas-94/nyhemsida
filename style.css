@@ -1,0 +1,152 @@
+header {  
+    background-color: orange;  
+    position: fixed;  
+    left: 0;  
+    right: 0;  
+    top: 5px;  
+    height: 30px;  
+    display: flex;  
+    align-items: center;  
+    align-content: center;
+    box-shadow: 0 0 25px 0 black;  
+    text-align: center;
+    }  
+     body   
+{  
+ height: 125vh;  
+margin-top: 80px;  
+padding: 30px;  
+background-size: cover;   
+font-family: sans-serif;  
+background-image: url(/bakgrund/YcpX4k.jpg);
+width: 100%;
+}  
+       .sidenav {
+        
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      
+  }    
+   .sidenav button {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }   
+  .sidenav .home {
+    background-color: blue;
+    color: white;
+  }
+  .sidenav button:hover:not(.active) {
+    background-color:purple;
+    color: white;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+    .welcometext {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: fantasy;
+    
+  } 
+  .safety {
+    text-align: center;
+
+  }
+   .skor2{
+    padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  
+  /* box-shadow: 0 9px #999; */
+  }
+  .skor2:hover{
+    background-color: purple
+  }
+  .skor2:active{
+    background-color: purple;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .tröjor2{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 0 9px #999; */
+  }
+  .tröjor2:hover{
+    background-color: purple
+  }
+  .tröjor:active{
+    background-color: purple;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .byxor2{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color:black;
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 0 9px #999; */
+  } 
+  .byxor2:hover{
+    background-color: purple
+  }
+  .byxor2:active{
+    background-color: purple;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .listitem {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 35%;
+
+  }
+  .listitem img{
+    height: 50%;
+    width: 50%;
+
+  }
+  .listitem button{
+    height: 10%;
+    width: 30%;
+  }
+  .div img{
+    height: 30%;
+    width: 30%;
+  }
+
+  

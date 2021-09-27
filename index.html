@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Page VueJS Application</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        BigJ clothes
+    </header>
+
+    <div id="app">
+
+
+        <div id="mysidenav" class="sidenav">
+
+
+            <ul>
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li>
+                    <button class="home" onclick="toggla(this); firstpage()">Home</button>
+
+                </li>
+                <li>
+                    <button class="products" onclick="toggla(this)">Products</button>
+                </li>
+                <li>
+                    <button class="yourbag" onclick="toggla(this); updatecart()">Your bag</button>
+                </li>
+                <li>
+                    <button class="admin" onclick="toggla(this)">Admin</button>
+                </li>
+            </ul>
+
+
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <span v-if="false"> shoooo </span>
+
+        <div class="homie" v-if="maincontroller == 'Home' && visa == true">
+            <div>
+                {{visa}}
+                <h1 class="welcometext">
+                    Välkommen till den bästa återförsäljaren av fritids, vardagliga och sportkläder
+                </h1>
+                <h3 class="safety">
+                    Med snabba leveranstider och säkra betalningar garanterar vi nöjda kunder och säkerhet
+                </h3>
+
+                <ul id="pul2">
+
+                </ul>
+            </div>
+
+            <div id="moreinfo1" >
+                <div id="productinfo">
+                    <input id="info" type="hidden">
+                    </input>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div v-else-if="maincontroller == 'Products'">
+            {{subcontroller}}
+            <div id="skor" class="skor">
+                <button class="skor2" onclick="setsubcontroller(2)">Skor</button>
+
+            </div>
+
+            <div id="tröjor">
+                <button class="tröjor2" onclick="setsubcontroller(3)">Tröjor</button>
+            </div>
+
+            <div id="byxor">
+                <button class="byxor2" onclick="setsubcontroller(1)">Byxor</button>
+            </div>
+            <div v-if="subcontroller !== 0 && selecteditem === 0">
+                <ul id="pul">
+
+                </ul>
+            </div>
+            <div id="moreinfo" v-if="selecteditem !== 0">
+                <div id="productinfo">
+                    <input id="info" type="hidden">
+                    </input>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div v-else-if="maincontroller == 'Your bag'">
+
+            <div v-if="cartlength == 0">
+                du har inga objekt i din varukorg
+            </div>
+            <div v-else>
+
+                <ul v-on:load="loadedul" id="varuk">
+
+
+                </ul>
+                <form id="final">
+                    <input placeholder="Namn" type="text" id="namn">
+
+                    </input>
+                    <input placeholder="efternamn" type="text" id="efternamn">
+
+                    </input>
+                    <input placeholder="Adress" type="text" id="adress">
+
+                    </input>
+                    <input placeholder="Telefonnummer" type="number" id="telefonnummer">
+
+                    </input>
+                    <input placeholder="Email" type="text" id="email">
+
+                    </input>
+                    <input placeholder="Kortnummer" type="text" id="kortnummer">
+
+                    </input>
+                    <select id="select" onchange="updateprice()">
+                        <option value="59">Hemleverans</option>
+                        <option value="29">närmnsta ombud</option>
+                    </select>
+                    <p id="total">
+
+                    </p>
+                    <button>
+                        Betala
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <div v-else-if="maincontroller == 'Admin'">
+            <form>
+                <input id="namn" placeholder="namn" type="text">
+                <input id="pris" placeholder="pris" type="number">
+                <input id="bild" placeholder="imgpath" type="text">
+                <select id="val">
+                    <option value="2">
+                        tröjor
+                    </option>
+                    <option value="0">
+                        byxor
+                    </option>
+                    <option value="1">
+                        skor
+                    </option>
+                </select>
+                <input id="besk" placeholder="beskrivning" type="text">
+                <button type="button" onclick="createnewitem()">
+                    Create item
+                </button>
+
+            </form>
+        </div>
+        <div v-else="Home">
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
